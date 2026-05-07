@@ -1,0 +1,20 @@
+# @package _global_
+
+env_name: LunarLander-v3
+
+dqn:
+  discount: 0.99
+  buffer_size: 1000000
+  max_episodes: 2000
+  minibatch_size: 128
+  eps_schedule: 1.0
+  exploration_fraction: 0.5
+  lr: 0.001
+  tau: 1.0
+  eps_min: 0.05
+  t_target: 1000
+  start_time: 1000
+  update_freq: 4
+  n_updates: 1
+  q_net_kwargs:
+    hidden_layers: [256, 256]

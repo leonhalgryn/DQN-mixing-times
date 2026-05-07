@@ -1,0 +1,15 @@
+# @package _global_
+
+minibatch_file: ???
+output: ???
+
+max_lag: 120
+knn: 20
+num_cores: -1
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: .
+  output_subdir: null

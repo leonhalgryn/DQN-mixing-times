@@ -1,0 +1,20 @@
+defaults:
+  - _self_
+  - dqn: cartpole
+  - sampler: yu_contiguous_block
+
+seed: null
+
+buffer_path: null
+render: false
+save_model_path: null
+load_model_path: null
+minibatch_log_path: null
+sample_with_replacement: true
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: .
+  output_subdir: null

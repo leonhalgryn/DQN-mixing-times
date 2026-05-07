@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+tqdm
+joblib
+hydra-core==1.3.2
+omegaconf==2.3.0
+gymnasium[box2d]
+ale-py
+torch
+scikit-learn
+pandas
+pyarrow
+POT

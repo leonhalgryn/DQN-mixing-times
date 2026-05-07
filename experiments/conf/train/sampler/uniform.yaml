@@ -1,0 +1,7 @@
+# @package sampler
+
+_target_: src.buffers.samplers.UniformSampler
+replace: ${sample_with_replacement}
+rng:
+  _target_: numpy.random.default_rng
+  seed: ${seed}

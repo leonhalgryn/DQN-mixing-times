@@ -1,0 +1,20 @@
+# @package _global_
+
+env_name: CliffWalking-v1
+
+dqn:
+  discount: 0.99
+  buffer_size: 100000
+  max_episodes: 50000
+  minibatch_size: 128
+  eps_schedule: 0.995
+  exploration_fraction: 0.2
+  lr: 0.0005
+  tau: 0.001
+  eps_min: 0.05
+  t_target: 1
+  start_time: 500
+  update_freq: 128
+  n_updates: 1
+  q_net_kwargs:
+    hidden_layers: [256, 256]

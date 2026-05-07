@@ -1,0 +1,20 @@
+# @package _global_
+
+env_name: CartPole-v1
+
+dqn:
+  discount: 0.99
+  buffer_size: 100000
+  max_episodes: 1000
+  minibatch_size: 128
+  eps_schedule: 0.99
+  exploration_fraction: 0.2
+  lr: 0.001
+  tau: 1.0
+  eps_min: 0.05
+  t_target: 10
+  start_time: 1000
+  update_freq: 256
+  n_updates: 128
+  q_net_kwargs:
+    hidden_layers: [256, 256]

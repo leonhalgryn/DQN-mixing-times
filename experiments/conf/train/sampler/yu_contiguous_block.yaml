@@ -1,0 +1,8 @@
+# @package sampler
+
+_target_: src.buffers.samplers.YuContiguousBlockSampler
+block_length: 42
+gap_length: 2
+seed: ${seed}
+sort: true
+wraparound: true

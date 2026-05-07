@@ -1,0 +1,4 @@
+*.npy filter=lfs diff=lfs merge=lfs -text
+data/minibatches/lunarlander.npy.part_* filter=lfs diff=lfs merge=lfs -text
+*.npy.xz.part_* filter=lfs diff=lfs merge=lfs -text
+*.npy.xz filter=lfs diff=lfs merge=lfs -text

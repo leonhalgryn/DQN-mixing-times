@@ -1,0 +1,20 @@
+# @package _global_
+
+env_name: FrozenLake-v1
+
+dqn:
+  discount: 0.99
+  buffer_size: 50000
+  max_episodes: 5000
+  minibatch_size: 128
+  eps_schedule: 0.999
+  exploration_fraction: 0.3
+  lr: 0.001
+  tau: 1.0
+  eps_min: 0.05
+  t_target: 1000
+  start_time: 500
+  update_freq: 128
+  n_updates: 4
+  q_net_kwargs:
+    hidden_layers: [256, 256]
