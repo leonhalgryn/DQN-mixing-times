@@ -88,6 +88,7 @@ def single_rollout_worker(cfg: dict[str, Any], seed: int) -> np.ndarray:
         trajectory,
         max_lag=cfg["max_lag"],
         n_neighbours=cfg["knn"],
+        m=cfg['history'],
         show_progress=False,
     )
 

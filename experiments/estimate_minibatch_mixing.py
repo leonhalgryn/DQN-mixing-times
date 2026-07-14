@@ -46,6 +46,7 @@ def main(cfg: DictConfig):
             minibatches[i],
             max_lag=cfg.max_lag,
             n_neighbours=cfg.knn,
+            m=cfg.history,
             show_progress=False,
         )
         for i in tqdm(range(n_minibatches), desc="Minibatches")

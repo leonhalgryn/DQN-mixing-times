@@ -10,9 +10,10 @@ load_model_path: ???
 output: ./tau_estimates.npy
 
 n_rollouts: 500
-max_lag: 500
+max_lag: 500 
 knn: 20
 num_cores: 1
+history: 20
 
 hydra:
   job:
